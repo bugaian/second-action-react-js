@@ -17,7 +17,7 @@ jobs:
       - name: Run tests
         run: npm test
   deploy:
-    depends: test
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
